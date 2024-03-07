@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#app {
+    margin: 10px;
+}
+
+
+#popup {
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 5%;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+.checked {
+    background-color: rgb(238, 195, 195);
+    /* pointer-events: none; */
+}
+
+.ordered {
+    background-color: #e78181;
+    pointer-events: none;
+}
+
+.slideshow-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+}
+
+.slide.active {
+    opacity: 1;
+    display: block;
+}
+
+.custom-cgv {
+    text-shadow: 2px 2px 2px #b9b9b9;
+}
